@@ -19,9 +19,13 @@
             }
             finally
             {
-                Console.WriteLine("It worked worked");
+                Console.WriteLine("It didn't work :(");
             }
-            
+
+            PersonHandler personHandler = new PersonHandler();
+
+            personHandler.SetAge();
+;
             // Person.ToString();
         }
     }
