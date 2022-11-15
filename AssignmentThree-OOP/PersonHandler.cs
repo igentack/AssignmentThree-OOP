@@ -8,20 +8,18 @@ namespace AssignmentThree_OOP
 {
     internal class PersonHandler
     {
-        string firstWord2 = "test2";
-        string secondWord2 = "forty2";
-        int theAge = 8;
+        string firstWord2 = "Sebastian";
+        string secondWord2 = "Sten";
+        int theAge = 12;
         public void SetAge(Person pers, int age) 
         {
-            //Person andra = new Person(firstWord2, secondWord2, theAge);
-        
-            Console.WriteLine("Try instance");
+            
         }
 
         internal void SetAge()
         {
-            Person andra = new Person(firstWord2, secondWord2, theAge);
-            Console.WriteLine("SetAge");
+            Person second = new Person(firstWord2, secondWord2, theAge);
+            Console.WriteLine(second.ToString());
         }
     }
 }   

@@ -82,7 +82,7 @@ namespace AssignmentThree_OOP
             }
         }
 
-        public Person( string fName, string? lName, int age, int weight = 150, int height = 150)
+        public Person( string fName, string? lName, int age, int weight = 75, int height = 170)
         {
             LName = lName;
             FName = fName;
@@ -90,12 +90,10 @@ namespace AssignmentThree_OOP
             Weight = weight;
             Height = height;
         }
+
+
+        public override string ToString() => $"{FName} {LName} weighs in at {Weight} kg and is {Age} years young!";
         
-        
-        public override string ToString()
-        {
-            return $"Name: {FName} and {Age}";
-        }
     }
 }
 
