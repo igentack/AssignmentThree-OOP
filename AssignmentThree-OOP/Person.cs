@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace AssignmentThree_OOP
 {
-    internal class Person
+    public class Person
     {
-        private int weight;
+        private double weight;
         private int height;
         private string? lName;
         private string? fName;
         private int age;
 
          
-        public int Weight
+        public double Weight
         {
             get { return weight; }
             set { weight = value; }
@@ -82,7 +82,7 @@ namespace AssignmentThree_OOP
             }
         }
 
-        public Person( string fName, string? lName, int age, int weight = 75, int height = 170)
+        public Person( string fName, string lName, int age = 10, double weight = 75, int height = 170)
         {
             LName = lName;
             FName = fName;
@@ -91,9 +91,9 @@ namespace AssignmentThree_OOP
             Height = height;
         }
 
-
-        public override string ToString() => $"{FName} {LName} weighs in at {Weight} kg and is {Age} years young!";
-        
+        public Person()
+        {
+        }
     }
 }
 
