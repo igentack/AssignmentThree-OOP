@@ -1,4 +1,6 @@
-﻿namespace AssignmentThree_OOP
+﻿using AssignmentThree_OOP.Persons;
+
+namespace AssignmentThree_OOP
 {
     internal class Program
     {
@@ -32,3 +34,6 @@
         }
     }
 }
+// TODO - Organize project in to folders - DONE
+// TODO - Use comments where needed
+// TODO - Change variable names + cleanup?

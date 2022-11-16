@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssignmentThree_OOP
+namespace AssignmentThree_OOP.Persons
 {
     public class Person
     {
@@ -14,20 +14,17 @@ namespace AssignmentThree_OOP
         private string? fName;
         private int age;
 
-         
         public double Weight
         {
             get { return weight; }
             set { weight = value; }
         }
 
-
         public int Height
         {
             get { return height; }
             set { height = value; }
         }
-
 
         public string? LName
         {
@@ -46,7 +43,6 @@ namespace AssignmentThree_OOP
             }
         }
 
-
         public string? FName
         {
             get { return fName; }
@@ -64,25 +60,24 @@ namespace AssignmentThree_OOP
             }
         }
 
-
         public int Age
         {
             get { return age; }
-            set 
-            { 
-                if(value <= 0) 
+            set
+            {
+                if (value <= 0)
                 {
                     throw new ArgumentException
                     ($"{value} is not a valid age, try with a positive value.");
                 }
                 else
                 {
-                    age = value; 
+                    age = value;
                 }
             }
         }
 
-        public Person( string fName, string lName, int age = 10, double weight = 75, int height = 170)
+        public Person(string fName, string lName, int age = 10, double weight = 75, int height = 170)
         {
             LName = lName;
             FName = fName;
@@ -96,6 +91,4 @@ namespace AssignmentThree_OOP
         }
     }
 }
-
-
-
+// TODO - Setters? 

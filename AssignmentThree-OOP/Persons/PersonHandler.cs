@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace AssignmentThree_OOP
+namespace AssignmentThree_OOP.Persons
 {
     internal class PersonHandler
     {
-        
+
         public Person CreatePerson(string firstWord, string secondWord, int theAge, double weight, int height)
         {
             var person = new Person();
@@ -24,12 +24,12 @@ namespace AssignmentThree_OOP
             Console.WriteLine($"This is after reassigning the age, and the new age is {firstWord.Age}.\n");
 
         }
-        
+
         public static void Bmi(double weight, int height)
         {
-            double bmiResult = Math.Round(100*(weight / ((height * height)/100)),2);         
+            double bmiResult = Math.Round(100 * (weight / (height * height / 100)), 2);
             Console.WriteLine($"... and his BMI is {bmiResult}.\n");
         }
-    }   
-}   
+    }
+}
 
