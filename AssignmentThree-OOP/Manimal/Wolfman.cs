@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssignmentThree_OOP.InPoly
+namespace AssignmentThree_OOP.Manimal
 {
-    abstract class UserError
+    internal class Wolfman
     {
-
     }
 }
