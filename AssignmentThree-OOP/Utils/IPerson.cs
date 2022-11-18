@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssignmentThree_OOP.Manimal
+namespace AssignmentThree_OOP.Utils
 {
-    internal class Wolfman
+    internal interface IPerson
     {
+        string Talk();
     }
 }
